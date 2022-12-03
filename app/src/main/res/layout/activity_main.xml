@@ -1,0 +1,141 @@
+<?xml version="1.0"?>
+
+    <LinearLayout tools:context=".MainActivity"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:orientation="vertical"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:layout_height="match_parent"
+    android:layout_width="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="@drawable/tick">
+
+
+
+        <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="THE TIC-TAC-TOE"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:textStyle="bold"
+            style="@style/TextAppearance.AppCompat.Light.SearchResult.Title"
+            android:id="@+id/textView1"
+            android:layout_centerInParent="true"
+            android:textSize="35sp"
+
+            ></TextView>
+
+        <TableLayout
+            android:id="@+id/mainBoard"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="top|center"
+            android:clickable="true"
+            android:gravity="center"
+            android:layout_marginTop="55dp"
+            android:nestedScrollingEnabled="false"
+            android:padding="10dp">
+            <TableRow
+                android:id="@+id/row0"
+                style="@style/TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+             <TextView
+                 style="@style/LeftCell"
+                 android:width="50dp"
+                 android:layout_column="0"></TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:width="50dp"
+                    android:layout_column="1"></TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:width="50dp"
+                    android:layout_column="2"></TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row1"
+                style="@style/TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:width="50dp"
+                    android:layout_column="0"></TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:width="50dp"
+                    android:layout_column="1"></TextView>
+
+                <TextView
+
+                    style="@style/RightCell"
+                    android:width="50dp"
+                    android:layout_column="2"
+                    ></TextView>
+
+            </TableRow>
+
+            <TableRow
+                android:id="@+id/row2"
+                style="@style/TableRow"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    style="@style/LeftCell"
+                    android:width="50dp"
+                    android:layout_column="0"></TextView>
+
+                <TextView
+                    style="@style/MiddleCell"
+                    android:width="50dp"
+                    android:layout_column="1"></TextView>
+
+                <TextView
+                    style="@style/RightCell"
+                    android:width="50dp"
+                    android:layout_column="2"></TextView>
+
+            </TableRow>
+
+        </TableLayout>
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:id="@+id/turn"
+            android:padding="10dp"
+            android:layout_marginTop="50dp"
+            android:gravity="left"
+            android:layout_marginLeft="10dp"
+            android:textColor="@color/white"
+            android:fontFamily="sans-serif-medium"
+            android:textSize="24dp"
+            android:textStyle="bold"
+            android:text="          Turn:  "
+            />
+
+    <Button
+        android:id="@+id/reset"
+        style="@style/Widget.AppCompat.Button.Borderless"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:soundEffectsEnabled="true"
+        android:background="#437909BD"
+        android:text="   RESET   "
+        android:layout_marginBottom="50dp"
+        android:textColor="@android:color/white" />
+
+</LinearLayout>
